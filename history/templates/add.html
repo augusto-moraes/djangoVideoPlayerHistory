@@ -1,1 +1,6 @@
-add
+<form method="POST" class="post-form">{% csrf_token %}
+        {{ form.as_p }}
+        <label for="youtubeUrl">Youtube URL: </label>
+        <input id="youtubeUrl" type="text" name="youtubeUrl" maxlength="500" required>
+        <button type="submit" name="button">Submit</button>
+</form>

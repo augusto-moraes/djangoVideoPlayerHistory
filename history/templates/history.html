@@ -1,1 +1,9 @@
-hello
+{% if history %}
+    <ul>
+    {% for url in history %}
+        <li><span>{{ url }}</span></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>The history is empty.</p>
+{% endif %}
