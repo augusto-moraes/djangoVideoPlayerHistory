@@ -1,5 +1,5 @@
 from django.db import models
 
 
-class inputUrl(models.Model):
+class modelUrl(models.Model):
     youtubeUrl = models.CharField(max_length=500)
