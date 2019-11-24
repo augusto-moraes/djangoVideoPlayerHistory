@@ -1,7 +1,8 @@
 {% if history %}
+  <h2>Urls List:</h2>
     <ul>
     {% for url in history %}
-        <li><span>{{ url }}</span></li>
+        <li><span>{{ url.youtubeUrl }}</span></li>
     {% endfor %}
     </ul>
 {% else %}

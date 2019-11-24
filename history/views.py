@@ -10,7 +10,8 @@ def add(request):
     if request.method == 'POST':
         form = formUrl(request.POST)
         if form.is_valid():
-            model = modelUrl()
+            url = form.cleaned_data['youtubeUrl']
+            model = modelUrl(youtubeUrl=url)
             model.save()
             return HttpResponseRedirect('/')
     else:
