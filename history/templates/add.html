@@ -1,7 +1,7 @@
 <form method="POST" class="post-form">
         {% csrf_token %}
-        {{ form.as_p }}
-        
+        {{ form }}
+
         <button type="submit">Submit</button>
 </form>
 <a href="/">Or go back to your history list.</a>
